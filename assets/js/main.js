@@ -263,18 +263,18 @@ VenoBox
      Newsletter Subscribe
      --------------------------------------*/
 
-    $(".subscribe-mail").ajaxChimp({
-        callback: mailchimpCallRep,
-        url: "mailchimp-post-url" //Replace this with your own mailchimp post URL. Just paste the url inside "".
-    });
+    // $(".subscribe-mail").ajaxChimp({
+    //     callback: mailchimpCallRep,
+    //     url: "mailchimp-post-url" //Replace this with your own mailchimp post URL. Just paste the url inside "".
+    // });
 
-    function mailchimpCallRep(resp) {
-        if (resp.result === "success") {
-            $(".sucess-message").html(resp.msg).fadeIn(1000);
-            $(".error-message").fadeOut(500);
-        } else if (resp.result === "error") {
-            $(".error-message").html(resp.msg).fadeIn(1000);
-        }
-    }
+    // function mailchimpCallRep(resp) {
+    //     if (resp.result === "success") {
+    //         $(".sucess-message").html(resp.msg).fadeIn(1000);
+    //         $(".error-message").fadeOut(500);
+    //     } else if (resp.result === "error") {
+    //         $(".error-message").html(resp.msg).fadeIn(1000);
+    //     }
+    // }
 
 });
