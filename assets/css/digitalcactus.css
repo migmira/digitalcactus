@@ -22,6 +22,11 @@
 	.hero-text span{
 		font-size: 1.5rem;
 	}
+
+	.hero-text p{
+		font-size: 1.2rem;
+	}
+
 }
 
 @media screen and (max-width: 524px) {
@@ -33,6 +38,11 @@
 	.hero-text span{
 		font-size: 1.2rem;
 	}
+
+	.hero-text p{
+		font-size: 1rem;
+	}
+
 }
 
 @media screen and (max-width: 481px) {
@@ -44,4 +54,9 @@
 	.hero-text span{
 		font-size: 1rem;
 	}
+
+	.hero-text p{
+		font-size: 0.9rem;
+	}
+
 }
