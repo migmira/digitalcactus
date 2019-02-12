@@ -258,6 +258,33 @@ VenoBox
     });
 
 
+    /*----------------------------------------
+     Contact Form
+     --------------------------------------*/
+    $('#contact_form').submit(function(e){
+
+        e.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url: '/data/sendemail.php',
+            data: $(this).serialize(),
+        })
+        .done(function(jr) {
+
+            alert(jr.message);
+            window.location.reload();
+            // window.location.replace(window.location.href + '#home')
+
+        })
+        .fail(function(jr) {
+            alert('Lo sentimos, algo salió mal');
+        })
+        .always(function(jr) {
+            
+        });
+
+    })
 
     /*----------------------------------------
      Newsletter Subscribe
